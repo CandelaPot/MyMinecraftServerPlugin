@@ -1,0 +1,16 @@
+name: MyMinecraftServerPlugin
+version: 0.3.3102
+author: candelapot
+main: net.ddns.candelapot.Main
+loadbefore: [Jecon, ChestShop]
+commands:
+    OriginalCommand:
+      description: 自作プラグインのコマンド
+      aliases: [original]
+      usage: |
+           /<command> - 説明を表示します。
+      permission: MyMinecraftServerPlugin.command
+permissions:
+    MyMinecraftServerPlugin.command:
+      description: OriginalCommandコマンドの使用権限
+      default: true
